@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IB.React.Demo", "IB.React.Demo\IB.React.Demo.csproj", "{9E00C170-F6A1-4C0A-96D7-974FECDB4B14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IB.React.Core", "IB.React.Core\IB.React.Core.csproj", "{7EFF913C-0F9B-40A0-B7E0-9865FAB0BE6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E00C170-F6A1-4C0A-96D7-974FECDB4B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E00C170-F6A1-4C0A-96D7-974FECDB4B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E00C170-F6A1-4C0A-96D7-974FECDB4B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E00C170-F6A1-4C0A-96D7-974FECDB4B14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFF913C-0F9B-40A0-B7E0-9865FAB0BE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFF913C-0F9B-40A0-B7E0-9865FAB0BE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFF913C-0F9B-40A0-B7E0-9865FAB0BE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFF913C-0F9B-40A0-B7E0-9865FAB0BE6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

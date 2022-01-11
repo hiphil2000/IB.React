@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>9</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="JWT" Version="8.8.1" />
+      <PackageReference Include="JWT.Extensions.AspNetCore" Version="8.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.13" />
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+      <PackageReference Include="System.Data.Common" Version="4.3.0" />
+      <PackageReference Include="System.Data.Odbc" Version="6.0.0" />
+      <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Auth\Jwt\**" />
+      <Compile Remove="Auth\JwtExtensions.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Auth\Jwt\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Auth\Jwt\**" />
+    </ItemGroup>
+
+</Project>
