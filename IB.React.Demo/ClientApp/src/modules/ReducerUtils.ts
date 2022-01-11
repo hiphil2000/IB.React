@@ -51,11 +51,11 @@ export function asyncActionToArray<AC extends AnyAsyncActionCreator>(asyncAction
 }
 
 /**
- * 비동기 처리 리듀서를 생성합니다.
+ * 비동기 처리 핸들러를 생성합니다.
  * @param asyncActionCreator createAsyncAction로 생성된 Action Creator
  * @param key
  */
-export function createAsyncReducer<S, AC extends AnyAsyncActionCreator, K extends keyof S>(
+export function createAsyncHandlers<S, AC extends AnyAsyncActionCreator, K extends keyof S>(
     asyncActionCreator: AC,
     key: K
 ) {

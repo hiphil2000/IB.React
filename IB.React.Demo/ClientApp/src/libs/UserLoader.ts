@@ -2,8 +2,6 @@
 import {IUser} from "./apis/Interfaces";
 import {GetCurrentUser} from "./apis/Auth";
 import {setUser} from "../modules/auth";
-import {StorageHelper} from "./local-storage";
-import {USER_KEY} from "./local-storage/StorageHelper";
 
 /**
  * 최초 실행 시 사용자를 불러오기 위한 함수입니다.

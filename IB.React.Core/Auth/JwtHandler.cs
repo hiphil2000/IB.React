@@ -47,7 +47,7 @@ namespace IB.React.Core.Auth
 			var accessPayload = jwtService.DecodeToken(accessToken);
 			var refreshPayload = jwtService.DecodeToken(refreshToken);
 
-			if (!(jwtService.IsValid(accessToken) && jwtService.IsValid(refreshToken)))
+			if (!(jwtService.IsValid(accessToken) || jwtService.IsValid(refreshToken)))
 			{
 				return AuthenticateResult.Fail("Tokens are invalid");
 			}

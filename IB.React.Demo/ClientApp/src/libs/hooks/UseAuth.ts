@@ -3,10 +3,8 @@ import useFetch from "./UseFetch";
 import {IUser} from "../apis/Interfaces";
 import {ILoginPayload, LoginResponse, Login, Logout} from "../apis/Auth";
 import {useCallback, useEffect, useState} from "react";
-import {StorageHelper} from "../local-storage";
 import {setUser} from "../../modules/auth";
 import {userSelector} from "../../modules/auth/Seletors";
-import {USER_KEY} from "../local-storage/StorageHelper";
 
 /**
  * 인증과 관련된 기능을 갖고 있는 Hook입니다.
@@ -19,7 +17,6 @@ export default function useAuth() {
     const userStore = useSelector(userSelector);
     
     // 요청 Utils
-    const storage = StorageHelper.getInstance();
     const [logoutState, logout] = useFetch<void, void>(Logout);
     const [loginState, login] = useFetch<ILoginPayload, LoginResponse>(Login);
     
@@ -28,11 +25,6 @@ export default function useAuth() {
     
     // 유저 설정 함수입니다.
     const applyUser = (user: IUser | null): void => {
-        // 스토리지 설정
-        storage.set(USER_KEY, user);
-        
-        console.log(user);
-        
         // 스토어 설정
         dispatch(setUser(user));
     }
